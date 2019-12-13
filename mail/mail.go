@@ -126,7 +126,9 @@ func main() {
 	fmt.Println("邮箱服务域名:", host)
 	fmt.Println("邮箱服务端口:", port)
 	fmt.Println("excel文件路径:", filePath)
-	fmt.Println("开始发送邮件!")
+	fmt.Println("开始读取excel...")
 	var messageArr = readExcel(filePath)
+	fmt.Printf("开始发送邮件, 读取到共[%d]封邮件...\n", len(messageArr))
 	sendMailFromStruct(messageArr)
+	fmt.Println("邮件发送完毕...")
 }
