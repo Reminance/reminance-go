@@ -52,12 +52,9 @@ func SendMail(mailTo []string, subject string, body string) error {
 	m.SetHeader("To", mailTo...)    //发送给多个用户
 	m.SetHeader("Subject", subject) //设置邮件主题
 	m.SetBody("text/html", body)    //设置邮件正文
-
 	d := gomail.NewDialer(mailConn["host"], port, mailConn["user"], mailConn["pass"])
-
 	err := d.DialAndSend(m)
 	return err
-
 }
 
 func sendMailFromStruct(messageArr []mailMessage) {
@@ -132,5 +129,4 @@ func main() {
 	fmt.Println("开始发送邮件!")
 	var messageArr = readExcel(filePath)
 	sendMailFromStruct(messageArr)
-	// mailType := flag.String("port", ":8080", "http listen port")
 }
