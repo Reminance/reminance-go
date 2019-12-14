@@ -22,24 +22,7 @@ type mailMessage struct {
 }
 
 //SendMail 定义邮箱服务器连接信息
-func SendMail(mailTo []string, subject string, body string) error {
-	//定义邮箱服务器连接信息，如果是网易邮箱 pass填密码，qq邮箱填授权码
-
-	// mailConn := map[string]string{
-	//  "user": "reminance@163.com",
-	//  "pass": "hycfhggjhf",
-	//  "host": "smtp.163.com",
-	//  "port": "465",
-	// }
-
-	mailConn := map[string]string{
-		"user": "365204662@qq.com",
-		"pass": "sddsjcnjqqnlbgcb",
-		// "host": "smtp.exmail.qq.com",   //企业邮箱用这个
-		"host": "smtp.qq.com",
-		"port": "465",
-	}
-
+func SendMail(mailTo []string, subject string, body string, mailConn map[string]string) error {
 	port, _ := strconv.Atoi(mailConn["port"]) //转换端口类型为int
 
 	m := gomail.NewMessage()
@@ -57,7 +40,7 @@ func SendMail(mailTo []string, subject string, body string) error {
 	return err
 }
 
-func sendMailFromStruct(messageArr []mailMessage) {
+func sendMailFromStruct(messageArr []mailMessage, mailConn map[string]string) {
 	var size = len(messageArr)
 	for i, message := range messageArr {
 		fmt.Printf("当前进度[%d/%d], 开始发送给'%s(%s)'\n", i+1, size, message.name, message.mailTo)
@@ -70,7 +53,7 @@ func sendMailFromStruct(messageArr []mailMessage) {
 		//邮件正文
 		body := message.body
 
-		err := SendMail(mailTo, subject, body)
+		err := SendMail(mailTo, subject, body, mailConn)
 		if err != nil {
 			log.Println(err)
 			fmt.Println("send fail")
@@ -123,12 +106,38 @@ func main() {
 	fmt.Println("邮箱类型:", mailType)
 	fmt.Println("邮箱账号:", user)
 	fmt.Println("邮箱授权码:", pass)
+	if mailType == "netease" && host == "smtp.qq.com" {
+		host = "smtp.163.com"
+	}
 	fmt.Println("邮箱服务域名:", host)
 	fmt.Println("邮箱服务端口:", port)
 	fmt.Println("excel文件路径:", filePath)
 	fmt.Println("开始读取excel...")
 	var messageArr = readExcel(filePath)
 	fmt.Printf("开始发送邮件, 读取到共[%d]封邮件...\n", len(messageArr))
-	sendMailFromStruct(messageArr)
+	//定义邮箱服务器连接信息，如果是网易邮箱 pass填密码，qq邮箱填授权码
+
+	// mailConn := map[string]string{
+	//  "user": "reminance@163.com",
+	//  "pass": "hycfhggjhf",
+	//  "host": "smtp.163.com",
+	//  "port": "465",
+	// }
+
+	//mailConn := map[string]string{
+	//	"user": "365204662@qq.com",
+	//	"pass": "sddsjcnjqqnlbgcb",
+	//	// "host": "smtp.exmail.qq.com",   //企业邮箱用这个
+	//	"host": "smtp.qq.com",
+	//	"port": "465",
+	//}
+
+	mailConn := map[string]string{
+		"user": user,
+		"pass": pass,
+		"host": host,
+		"port": port,
+	}
+	sendMailFromStruct(messageArr, mailConn)
 	fmt.Println("邮件发送完毕...")
 }
