@@ -1,0 +1,38 @@
+# http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
+language: go
+
+go:
+  - "1.13.x"
+
+branches:
+  only:
+  - master
+  - develop
+
+# https://docs.travis-ci.com/user/database-setup/
+services:
+  - mysql
+  - redis-server
+  - elasticsearch
+
+env:
+  - GO111MODULE=on
+  - GOPROXY=https://goproxy.io
+
+install:
+  - cd /usr/bin
+  - go get -u github.com/mgechev/revive
+  - cd -
+
+before_script:
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
+  - find . -name "*.go" | xargs gofmt -w
+  - git diff --exit-code
+  - revive -config=revive.toml -formatter friendly ./...
+
+script:
+  - go test ./... || exit 0
+  - go test ./... -coverprofile=coverage.txt -covermode=atomic || exit 0
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
