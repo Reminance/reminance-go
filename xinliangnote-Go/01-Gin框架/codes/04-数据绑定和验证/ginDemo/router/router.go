@@ -1,11 +1,11 @@
 package router
 
 import (
-	"ginDemo/middleware/logger"
-	"ginDemo/middleware/sign"
-	"ginDemo/router/v1"
-	"ginDemo/router/v2"
-	"ginDemo/validator/member"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/middleware/logger"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/middleware/sign"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/router/v1"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/router/v2"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/validator/member"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"gopkg.in/go-playground/validator.v8"

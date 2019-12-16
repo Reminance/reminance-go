@@ -4,7 +4,7 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 	"fmt"
-	"ginDemo/config"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/config"
 	"net/url"
 	"sort"
 	"time"

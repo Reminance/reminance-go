@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"net"
-	"hello/go_server/proto/hello"
-	"hello/go_server/controller/hello_controller"
+	"github.com/reminance/reminance-go/xinliangnote-Go/02-Go gRPC/codes/01-gRPC Hello World/go_server/proto/hello"
+	"github.com/reminance/reminance-go/xinliangnote-Go/02-Go gRPC/codes/01-gRPC Hello World/go_server/controller/hello_controller"
 	"google.golang.org/grpc"
 )
 

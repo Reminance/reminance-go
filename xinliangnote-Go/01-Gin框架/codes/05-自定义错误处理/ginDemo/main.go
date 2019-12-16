@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"ginDemo/config"
-	"ginDemo/router"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/config"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/router"
 	"github.com/gin-gonic/gin"
 )
 

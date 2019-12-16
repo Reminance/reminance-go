@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"go_dev/day13/web_admin/model"
-	_ "go_dev/day13/web_admin/router"
+	"github.com/reminance/reminance-go/gohah-go-demo/day13  日志收集项目（三）/web_admin/model"
+	_ "github.com/reminance/reminance-go/gohah-go-demo/day13  日志收集项目（三）/web_admin/router"
 	"time"
 
-	"go_dev/day13/logadmin/src/github.com/jmoiron/sqlx"
+	"github.com/reminance/reminance-go/gohah-go-demo/day13  日志收集项目（三）/logadmin/src/github.com/jmoiron/sqlx"
 
 	"github.com/coreos/etcd/clientv3"
 	_ "github.com/go-sql-driver/mysql"

@@ -3,7 +3,7 @@ package alarm
 import (
 	"encoding/json"
 	"fmt"
-	"ginDemo/common/function"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/common/function"
 	"path/filepath"
 	"runtime"
 	"strings"

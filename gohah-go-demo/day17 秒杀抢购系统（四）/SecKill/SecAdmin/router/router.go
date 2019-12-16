@@ -2,8 +2,8 @@ package router
 
 import (
 	"github.com/astaxie/beego"
-	"go_dev/day14/SecKill/SecAdmin/controller/product"
-	"go_dev/day14/SecKill/SecAdmin/controller/activity"
+	"github.com/reminance/reminance-go/gohah-go-demo/day17 秒杀抢购系统（四）/SecKill/SecAdmin/controller/product"
+	"github.com/reminance/reminance-go/gohah-go-demo/day17 秒杀抢购系统（四）/SecKill/SecAdmin/controller/activity"
 )
 
 func init() {

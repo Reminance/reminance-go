@@ -1,6 +1,6 @@
 package main
 
-import "go_dev/day9/chat/chat_server/model"
+import "github.com/reminance/reminance-go/gohah-go-demo/day09 tcp编程&redis/chat/chat_server/model"
 
 var (
 	mgr *model.UserMgr

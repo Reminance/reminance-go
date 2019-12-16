@@ -2,7 +2,7 @@ package recover
 
 import (
 	"fmt"
-	"ginDemo/common/alarm"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/common/alarm"
 	"github.com/gin-gonic/gin"
 )
 

@@ -3,9 +3,9 @@ package main
 import (
 	"net/http"
 	"os"
-	localSpike2 "spikeSystem/localSpike"
-	remoteSpike2 "spikeSystem/remoteSpike"
-	"spikeSystem/util"
+	localSpike2 "github.com/reminance/reminance-go/spikeSystem/localSpike"
+	remoteSpike2 "github.com/reminance/reminance-go/spikeSystem/remoteSpike"
+	"github.com/reminance/reminance-go/spikeSystem/util"
 	"strconv"
 	"strings"
 

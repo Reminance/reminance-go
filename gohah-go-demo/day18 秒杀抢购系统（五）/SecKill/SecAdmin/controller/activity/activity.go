@@ -4,7 +4,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 //	"fmt"
-	"go_dev/day14/SecKill/SecAdmin/model"
+	"github.com/reminance/reminance-go/gohah-go-demo/day18 秒杀抢购系统（五）/SecKill/SecAdmin/model"
 	"fmt"
 	"net/http"
 )

@@ -1,9 +1,9 @@
 package sign
 
 import (
-	"ginDemo/common/function"
-	"ginDemo/config"
-	"ginDemo/entity"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/common/function"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/config"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/04-数据绑定和验证/ginDemo/entity"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 	"net/http"

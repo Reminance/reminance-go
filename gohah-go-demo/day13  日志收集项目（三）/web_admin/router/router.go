@@ -1,8 +1,8 @@
 package router
 
 import (
-	"go_dev/day13/web_admin/controller/AppController"
-	"go_dev/day13/web_admin/controller/LogController"
+	"github.com/reminance/reminance-go/gohah-go-demo/day13  日志收集项目（三）/web_admin/controller/AppController"
+	"github.com/reminance/reminance-go/gohah-go-demo/day13  日志收集项目（三）/web_admin/controller/LogController"
 
 	"github.com/astaxie/beego"
 )

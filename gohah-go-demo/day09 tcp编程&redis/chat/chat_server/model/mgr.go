@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"encoding/json"
-	"go_dev/day9/chat/common"
+	"github.com/reminance/reminance-go/gohah-go-demo/day09 tcp编程&redis/chat/common"
 
 	"github.com/garyburd/redigo/redis"
 )

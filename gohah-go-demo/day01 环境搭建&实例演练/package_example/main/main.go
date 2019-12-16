@@ -2,7 +2,7 @@ package main
 
 
 import(
-	"go_dev/day1/package_example/calc"
+	"github.com/reminance/reminance-go/gohah-go-demo/day01 环境搭建&实例演练/package_example/calc"
 	"fmt"
 )
 

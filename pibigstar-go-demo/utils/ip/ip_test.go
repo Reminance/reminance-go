@@ -1,7 +1,7 @@
 package ip
 
 import (
-	"go-demo/utils/ip/address"
+	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/ip/address"
 	"testing"
 )
 

@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/json"
-	"go-demo/blockchain/core"
+	"github.com/reminance/reminance-go/pibigstar-go-demo/blockchain/core"
 	"io"
 	"net/http"
 )

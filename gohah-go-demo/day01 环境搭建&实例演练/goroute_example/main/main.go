@@ -1,7 +1,7 @@
 package main
 
 import(
-	"go_dev/day1/goroute_example/goroute"
+	"github.com/reminance/reminance-go/gohah-go-demo/day01 环境搭建&实例演练/goroute_example/goroute"
 	"fmt"
 )
 

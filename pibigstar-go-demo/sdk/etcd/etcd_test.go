@@ -3,7 +3,7 @@ package test
 import (
 	"context"
 	"github.com/coreos/etcd/clientv3"
-	"go-demo/utils/env"
+	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/env"
 	"runtime"
 	"testing"
 	"time"

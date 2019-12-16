@@ -63,7 +63,7 @@ func initTemplate(filename string) (err error) {
 }
 
 func main() {
-	initTemplate("d:/project/src/go_dev/day10/template_http/index.html")
+	initTemplate("d:/project/src/github.com/reminance/reminance-go/gohah-go-demo/day10 http服务&mysql/template_http/index.html")
 	http.HandleFunc("/user/info", userInfo)
 	err := http.ListenAndServe("0.0.0.0:8880", nil)
 	if err != nil {

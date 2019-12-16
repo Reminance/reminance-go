@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"go_dev/day14/SecKill/SecProxy/service"
+	"github.com/reminance/reminance-go/gohah-go-demo/day15 秒杀抢购系统（二）/SecKill/SecProxy/service"
 	"time"
 
 	"golang.org/x/net/context"

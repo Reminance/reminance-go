@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"go_dev/day14/SecKill/SecProxy/service"
+	"github.com/reminance/reminance-go/gohah-go-demo/day14 秒杀抢购系统（一）/SecKill/SecProxy/service"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"

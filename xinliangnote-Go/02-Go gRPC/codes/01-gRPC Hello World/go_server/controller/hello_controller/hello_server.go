@@ -3,7 +3,7 @@ package hello_controller
 import (
 	"fmt"
 	"golang.org/x/net/context"
-	"hello/go_server/proto/hello"
+	"github.com/reminance/reminance-go/xinliangnote-Go/02-Go gRPC/codes/01-gRPC Hello World/go_server/proto/hello"
 )
 
 type HelloController struct{}

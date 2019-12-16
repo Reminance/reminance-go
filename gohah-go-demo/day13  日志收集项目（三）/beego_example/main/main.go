@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "go_dev/day13/beego_example/router"
+	_ "github.com/reminance/reminance-go/gohah-go-demo/day13  日志收集项目（三）/beego_example/router"
 
 	"github.com/astaxie/beego"
 )

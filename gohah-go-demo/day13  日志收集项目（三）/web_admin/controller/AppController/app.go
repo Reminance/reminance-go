@@ -2,7 +2,7 @@ package AppController
 
 import (
 	"fmt"
-	"go_dev/day13/web_admin/model"
+	"github.com/reminance/reminance-go/gohah-go-demo/day13  日志收集项目（三）/web_admin/model"
 
 	"strings"
 

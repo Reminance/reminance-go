@@ -4,7 +4,7 @@ import (
 	"github.com/astaxie/beego/logs"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
-	"go_dev/day14/SecKill/SecAdmin/model"
+	"github.com/reminance/reminance-go/gohah-go-demo/day17 秒杀抢购系统（四）/SecKill/SecAdmin/model"
 	etcd_client "github.com/coreos/etcd/clientv3"
 	"fmt"
 	"time"

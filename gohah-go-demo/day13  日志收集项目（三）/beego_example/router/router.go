@@ -1,7 +1,7 @@
 package router
 
 import (
-	"go_dev/day13/beego_example/controller/IndexController"
+	"github.com/reminance/reminance-go/gohah-go-demo/day13  日志收集项目（三）/beego_example/controller/IndexController"
 
 	"github.com/astaxie/beego"
 )

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"ginDemo/config"
-	"ginDemo/middleware"
-	"ginDemo/router"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/03-日志记录/ginDemo/config"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/03-日志记录/ginDemo/middleware"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/03-日志记录/ginDemo/router"
 	"github.com/gin-gonic/gin"
 )
 

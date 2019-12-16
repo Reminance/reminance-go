@@ -1,9 +1,9 @@
 package router
 
 import (
-	"ginDemo/common"
-	"ginDemo/router/v1"
-	"ginDemo/router/v2"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/03-日志记录/ginDemo/common"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/03-日志记录/ginDemo/router/v1"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/03-日志记录/ginDemo/router/v2"
 	"github.com/gin-gonic/gin"
 	"net/url"
 	"strconv"

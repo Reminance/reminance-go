@@ -1,7 +1,7 @@
 package main
 
 import (
-	"hello/go_client/proto/hello"
+	"github.com/reminance/reminance-go/xinliangnote-Go/02-Go gRPC/codes/01-gRPC Hello World/go_client/proto/hello"
 	"io"
 	"log"
 	"golang.org/x/net/context"

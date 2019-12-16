@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go_dev/day14/SecKill/SecLayer/service"
+	"github.com/reminance/reminance-go/gohah-go-demo/day16 秒杀抢购系统（三）/SecKill/SecLayer/service"
 	"strings"
 
 	"github.com/astaxie/beego/config"

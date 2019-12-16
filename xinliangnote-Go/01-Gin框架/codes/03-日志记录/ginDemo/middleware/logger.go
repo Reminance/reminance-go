@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"fmt"
-	"ginDemo/config"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/03-日志记录/ginDemo/config"
 	"github.com/gin-gonic/gin"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/rifflock/lfshook"

@@ -3,7 +3,7 @@ package model
 import (
 	"context"
 	"encoding/json"
-	"go_dev/day11/logagent/tailf"
+	"github.com/reminance/reminance-go/gohah-go-demo/day11/logagent/tailf"
 	"time"
 
 	"github.com/astaxie/beego/logs"

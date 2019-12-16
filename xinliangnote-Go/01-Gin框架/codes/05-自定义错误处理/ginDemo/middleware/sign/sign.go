@@ -1,10 +1,10 @@
 package sign
 
 import (
-	"ginDemo/common/alarm"
-	"ginDemo/common/function"
-	"ginDemo/config"
-	"ginDemo/entity"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/common/alarm"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/common/function"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/config"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/entity"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"net/url"

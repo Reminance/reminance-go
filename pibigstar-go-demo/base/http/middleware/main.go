@@ -1,7 +1,7 @@
 package main
 
 import (
-	middleware "go-demo/base/http/middleware/ip"
+	middleware "github.com/reminance/reminance-go/pibigstar-go-demo/base/http/middleware/ip"
 	"net/http"
 )
 

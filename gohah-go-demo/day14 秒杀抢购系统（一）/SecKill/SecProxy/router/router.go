@@ -1,7 +1,7 @@
 package router
 
 import (
-	"go_dev/day14/SecKill/SecProxy/controller"
+	"github.com/reminance/reminance-go/gohah-go-demo/day14 秒杀抢购系统（一）/SecKill/SecProxy/controller"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"

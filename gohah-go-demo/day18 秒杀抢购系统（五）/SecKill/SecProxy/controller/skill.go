@@ -2,7 +2,7 @@ package controller
 
 import (
 	"fmt"
-	"go_dev/day14/SecKill/SecProxy/service"
+	"github.com/reminance/reminance-go/gohah-go-demo/day14 秒杀抢购系统（一）/SecKill/SecProxy/service"
 	"strings"
 	"time"
 

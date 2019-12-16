@@ -1,7 +1,7 @@
 package main
 
 import(
-	a "go_dev/day2/example2/add"
+	a "github.com/reminance/reminance-go/gohah-go-demo/day02 数据类型&操作符/example2/add"
 	"fmt"
 )
 

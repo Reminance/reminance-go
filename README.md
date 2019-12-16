@@ -2,6 +2,38 @@
 
 #### 介绍
 reminance-go
+参考了N多tutorial  都是照搬的  (去掉了go.mod)
+
+一些依赖包(不完整):
+go get github.com/astaxie/beego  
+go get github.com/hpcloud/tail  
+go get github.com/Shopify/sarama  
+go get github.com/garyburd/redigo/redis  
+go get github.com/go-redis/redis  
+go get github.com/jmoiron/sqlx  
+go get github.com/coreos/etcd/clientv3  
+go get golang.org/x/net/context  
+go get github.com/coreos/etcd/mvcc/mvccpb  
+go get gopkg.in/olivere/elastic.v2  
+go get github.com/smallnest/rpcx/log  
+go get github.com/koding/multiconfig  
+go get github.com/dgrijalva/jwt-go  
+go get ggoogle.golang.org/grpc/metadata  
+go get google.golang.org/grpc  
+go get gopkg.in/go-playground/pool.v3  
+go get github.com/sony/sonyflake  
+go get github.com/xuri/excelize  
+go get github.com/gin-gonic/gin  
+go get github.com/lestrrat-go/file-rotatelogs  
+go get github.com/rifflock/lfshook  
+go get github.com/sirupsen/logrus  
+go get github.com/TruthHun/html2md  
+go get github.com/microcosm-cc/bluemonday  
+go get github.com/russross/blackfriday  
+go get golang.org/x/crypto/pbkdf2  
+
+
+
 
 #### 软件架构
 软件架构说明

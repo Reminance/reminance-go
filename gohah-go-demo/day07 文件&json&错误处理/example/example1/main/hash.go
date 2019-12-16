@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go_dev/day7/example/example1/balance"
+	"github.com/reminance/reminance-go/gohah-go-demo/day07 文件&json&错误处理/example/example1/balance"
 	"hash/crc32"
 	"math/rand"
 )

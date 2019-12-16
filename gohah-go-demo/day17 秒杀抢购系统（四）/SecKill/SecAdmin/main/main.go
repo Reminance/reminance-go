@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-	_ "go_dev/day14/SecKill/SecAdmin/router"
+	_ "github.com/reminance/reminance-go/gohah-go-demo/day17 秒杀抢购系统（四）/SecKill/SecAdmin/router"
 	"fmt"
 )
 

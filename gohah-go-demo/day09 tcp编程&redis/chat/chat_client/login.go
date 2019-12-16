@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"encoding/json"
 	"fmt"
-	"go_dev/day9/chat/common"
-	"go_dev/day9/chat/proto"
+	"github.com/reminance/reminance-go/gohah-go-demo/day09 tcp编程&redis/chat/common"
+	"github.com/reminance/reminance-go/gohah-go-demo/day09 tcp编程&redis/chat/proto"
 	"net"
 	"os"
 )

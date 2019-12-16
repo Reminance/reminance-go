@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"go_dev/day11/logagent/tailf"
+	"github.com/reminance/reminance-go/gohah-go-demo/day11/logagent/tailf"
 	"strings"
 	"time"
 

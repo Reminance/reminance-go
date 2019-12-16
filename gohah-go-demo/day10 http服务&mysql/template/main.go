@@ -13,7 +13,7 @@ type Person struct {
 }
 
 func main() {
-	t, err := template.ParseFiles("d:/project/src/go_dev/day10/template/index.html")
+	t, err := template.ParseFiles("d:/project/src/github.com/reminance/reminance-go/gohah-go-demo/day10 http服务&mysql/template/index.html")
 	if err != nil {
 		fmt.Println("parse file err:", err)
 		return

@@ -1,7 +1,7 @@
 package blockchain
 
 import (
-	"go-demo/blockchain/core"
+	"github.com/reminance/reminance-go/pibigstar-go-demo/blockchain/core"
 	"strconv"
 	"testing"
 )

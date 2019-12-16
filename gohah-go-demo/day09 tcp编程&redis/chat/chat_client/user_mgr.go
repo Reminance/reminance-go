@@ -1,8 +1,8 @@
 package main
 
 import "fmt"
-import "go_dev/day9/chat/common"
-import "go_dev/day9/chat/proto"
+import "github.com/reminance/reminance-go/gohah-go-demo/day09 tcp编程&redis/chat/common"
+import "github.com/reminance/reminance-go/gohah-go-demo/day09 tcp编程&redis/chat/proto"
 
 var onlineUserMap map[int]*common.User = make(map[int]*common.User, 16)
 

@@ -1,7 +1,7 @@
 package v1
 
 import (
-	"ginDemo/entity"
+	"github.com/reminance/reminance-go/xinliangnote-Go/01-Gin框架/codes/05-自定义错误处理/ginDemo/entity"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
