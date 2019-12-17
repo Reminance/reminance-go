@@ -7,7 +7,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/Luxurioust/excelize"
+	//"github.com/Luxurioust/excelize"
+	"github.com/360EntSecGroup-Skylar/excelize"
 	"gopkg.in/gomail.v2"
 )
 
@@ -77,7 +78,7 @@ func readExcel(file string) (messageArr []mailMessage) {
 	// index := xlsx.GetSheetIndex("Sheet1")
 	// // Get all the rows in a sheet.
 	// rows, err := xlsx.GetRows("Sheet" + strconv.Itoa(index))
-	rows, err := xlsx.GetRows("Sheet1")
+	rows := xlsx.GetRows("Sheet1")
 	for i, row := range rows {
 		if i == 0 || row[0] == "" {
 			continue

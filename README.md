@@ -2,7 +2,7 @@
 
 #### 介绍
 reminance-go
-参考了N多tutorial  都是照搬的  (去掉了go.mod)
+参考了N多tutorial  都是照搬的
 https://goproxy.io
 https://goproxy.cn
 
