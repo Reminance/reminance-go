@@ -2,7 +2,7 @@ package server
 
 import (
 	"fmt"
-	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/seq"
+	"go-demo/utils/seq"
 	"io"
 	"io/ioutil"
 	"log"

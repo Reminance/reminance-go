@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/aliyun/alibaba-cloud-sdk-go/sdk"
 	"github.com/aliyun/alibaba-cloud-sdk-go/sdk/requests"
-	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/rand"
+	"go-demo/utils/rand"
 	"sync"
 )
 

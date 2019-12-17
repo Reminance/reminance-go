@@ -2,7 +2,7 @@ package robot
 
 import (
 	"fmt"
-	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/env"
+	"go-demo/utils/env"
 	"strings"
 	"testing"
 	"time"

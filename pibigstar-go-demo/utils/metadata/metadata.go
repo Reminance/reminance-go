@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"github.com/dgrijalva/jwt-go"
-	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/token"
+	"go-demo/utils/token"
 	"google.golang.org/grpc/metadata"
 	"time"
 )

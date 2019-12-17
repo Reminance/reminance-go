@@ -6,7 +6,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/seq"
+	"go-demo/utils/seq"
 )
 
 // 带可取消的Context，调用cancel可取消所有Context执行

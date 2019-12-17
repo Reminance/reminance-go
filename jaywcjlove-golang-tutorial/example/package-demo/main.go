@@ -2,8 +2,8 @@ package main
 
 import (
   "fmt"
-  "package-demo/cal/multi"
-  "package-demo/cal"
+  "github.com/reminance/reminance-go/jaywcjlove-golang-tutorial/example/package-demo/cal/multi"
+  "github.com/reminance/reminance-go/jaywcjlove-golang-tutorial/example/package-demo/cal"
 )
 
 func main() {

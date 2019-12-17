@@ -2,7 +2,7 @@ package test
 
 import (
 	"context"
-	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/env"
+	"go-demo/utils/env"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

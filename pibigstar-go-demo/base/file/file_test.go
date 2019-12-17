@@ -1,7 +1,7 @@
 package file
 
 import (
-	"github.com/reminance/reminance-go/pibigstar-go-demo/utils/env"
+	"go-demo/utils/env"
 	"testing"
 )
 
