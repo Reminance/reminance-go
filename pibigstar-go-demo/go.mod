@@ -1,7 +1,7 @@
 module go-demo
 
 require (
-	github.com/360EntSecGroup-Skylar/excelize v1.4.1 // indirect
+	//github.com/360EntSecGroup-Skylar/excelize v1.4.1 // indirect
 	github.com/DataDog/zstd v1.3.5 // indirect
 	github.com/PuerkitoBio/goquery v1.5.0 // indirect
 	github.com/Shopify/sarama v1.20.0
