@@ -53,9 +53,10 @@ func main() {
 }
 
 func sendData(ch chan string) {
+	defer close(ch)//使用defer语句来close一个Channel也是可以的
 	for i := 1; i <= 10; i++ {
 		ch <- "数据" + strconv.Itoa(i)
 		fmt.Printf("子goroutine中写出第 %d 个数据\n", i)
 	}
-	close(ch)
+	//close(ch)
 }
