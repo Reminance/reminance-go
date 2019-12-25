@@ -70,6 +70,7 @@ func TestReGetUserCredential(t *testing.T) {
 
 //全局变量  用于传递视频uuid
 var tempVideoUUID string
+
 func TestAddNewVideo(t *testing.T) {
 	video, err := AddNewVideo(1, "123.mp4")
 	if err != nil {
@@ -111,7 +112,7 @@ func TestAddNewComment(t *testing.T) {
 	content := "i like this video"
 
 	err := AddNewComments(videoId, authorId, content)
-	if err != nil{
+	if err != nil {
 		t.Errorf("error in AddNewComments %s\n", err)
 	}
 }

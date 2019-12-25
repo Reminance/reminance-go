@@ -1,11 +1,11 @@
 package dbops
 
-import(
+import (
 	"database/sql"
-	"github.com/reminance/reminance-go/video-server/api/defs"
-	"github.com/reminance/reminance-go/video-server/utils"
-	"log"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/reminance/reminance-go/video-server/api/defs"
+	"github.com/reminance/reminance-go/video-server/api/utils"
+	"log"
 )
 
 func AddNewComments(videoId string, authorId int, content string) error {
@@ -21,7 +21,7 @@ func AddNewComments(videoId string, authorId int, content string) error {
 		return err
 	}
 	_, err = stmtInsert.Exec(uuid, videoId, authorId, content)
-	if err!= nil {
+	if err != nil {
 		log.Printf("%s\n", err)
 		return err
 	}
@@ -50,9 +50,8 @@ func ListComments(videoId string, from, to string) ([]*defs.Comment, error) {
 		if err := rows.Scan(&id, &authorName, &content); err != nil {
 			return res, err
 		}
-		c := &defs.Comment{Id:id, VideoId:videoId, AuthorName:authorName, Content:content}
+		c := &defs.Comment{Id: id, VideoId: videoId, AuthorName: authorName, Content: content}
 		res = append(res, c)
 	}
 	return res, nil
 }
-

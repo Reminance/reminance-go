@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/reminance/reminance-go/video-server/api/defs"
-	"github.com/reminance/reminance-go/video-server/utils"
+	"github.com/reminance/reminance-go/video-server/api/utils"
 	"log"
 	"time"
 )
@@ -25,10 +25,10 @@ func AddNewVideo(authorId int, name string) (*defs.VideoInfo, error) {
 		return nil, err
 	}
 	_, err = stmtInsert.Exec(uuid, authorId, name, format)
-	if err!= nil {
+	if err != nil {
 		return nil, err
 	}
-	return &defs.VideoInfo{Id:uuid,AuthorId:authorId, Name:name, DisplayCtime:format}, nil
+	return &defs.VideoInfo{Id: uuid, AuthorId: authorId, Name: name, DisplayCtime: format}, nil
 }
 
 func GetVideoInfo(uuid string) (*defs.VideoInfo, error) {
@@ -47,7 +47,7 @@ func GetVideoInfo(uuid string) (*defs.VideoInfo, error) {
 		log.Printf("%s\n", err)
 		return nil, err
 	}
-	if (err == sql.ErrNoRows) {
+	if err == sql.ErrNoRows {
 		return nil, nil
 	}
 	res := &defs.VideoInfo{Id: uuid, AuthorId: authorId, Name: name, DisplayCtime: displayCTime}
@@ -62,7 +62,7 @@ func DeleteVideo(uuid string) error {
 		return err
 	}
 	_, err = stmtDelete.Exec(uuid)
-	if err != nil{
+	if err != nil {
 		log.Printf("%s\n", err)
 		return err
 	}

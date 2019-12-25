@@ -1,9 +1,9 @@
 package dbops
 
-import(
+import (
 	"database/sql"
-	"log"
 	_ "github.com/go-sql-driver/mysql"
+	"log"
 )
 
 func AddUserCredential(loginName string, pwd string) error {
@@ -14,7 +14,7 @@ func AddUserCredential(loginName string, pwd string) error {
 		return err
 	}
 	_, err = stmtInsert.Exec(loginName, pwd)
-	if err!= nil {
+	if err != nil {
 		log.Printf("%s\n", err)
 		return err
 	}
@@ -45,7 +45,7 @@ func DeleteUser(loginName string, pwd string) error {
 		return err
 	}
 	_, err = stmtDelete.Exec(loginName, pwd)
-	if err != nil{
+	if err != nil {
 		log.Printf("%s\n", err)
 		return err
 	}
