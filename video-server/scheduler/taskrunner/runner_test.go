@@ -35,5 +35,5 @@ func TestRunner(t *testing.T) {
 	//runner内部发起的dispatcher执行完了之后  channel  转为  executor
 	//执行executor  executor 执行完了监听到channel关闭  通过抛出error
 	//在runner 结束  dispatch
-	time.Sleep(300 * time.Second)
+	time.Sleep(3 * time.Second)
 }
