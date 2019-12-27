@@ -117,7 +117,12 @@ $(document).ready(function() {
 	
 	$("#uploadform").on('submit', function(e) {
 		e.preventDefault()
-	  	var vname = $('#vname').val();
+		var file = $('#file-input').get(0).files[0];
+		if (file === undefined) {
+			alert("file not found")
+			return
+		}
+	  	var vname = file.name;
 
 	  	createVideo(vname, function(res, err) {
 	  		if (err != null ) {
@@ -128,7 +133,7 @@ $(document).ready(function() {
 
 	  		var obj = JSON.parse(res);
 	  		var formData = new FormData();
-			formData.append('file', $('#inputFile')[0].files[0]);
+			formData.append('file', file);
 
 			$.ajax({
 				url : 'http://' + window.location.hostname + ':8080/upload/' + obj['id'],
@@ -141,9 +146,9 @@ $(document).ready(function() {
 				contentType: false,  // tell jQuery not to set contentType
 				success : function(data) {
 				   console.log(data);
-				   $('#uploadvideomodal').hide();
-				   location.reload();
-				   //window.alert("hoa");
+					window.alert(data);
+					$('#uploadvideomodal').hide();
+					location.reload();
 				},
 				complete: function(xhr, textStatus) {
 					if (xhr.status === 204) {
